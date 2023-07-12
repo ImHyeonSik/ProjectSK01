@@ -2,6 +2,7 @@ import React from 'react'
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from '../view/home/Home';
 import Sub from '../view/sub/Sub';
+import HomeStack from "./HomeStack";
 
 const Tab = createBottomTabNavigator();
 
@@ -11,8 +12,8 @@ const MainTab = () => {
       initialRouteName={'Home'}
     >
       <Tab.Screen
-        name="Home"
-        component={Home}
+        name="HomeStack"
+        component={HomeStack}
         // options={({route}) => ({
         //   // tabBarVisible: getVisibility(route, 1),
         //   // tabBarVisible: true,
